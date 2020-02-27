@@ -1,25 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome!
 
-You can use the [editor on GitHub](https://github.com/daskza19/QuestManager/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Hi! I'm Josep Sànchez Arbona, student of the Bachelor's Degree in Videogames by UPC at [CITM](https://upc.citm.edu). This web is created for the second year's subject Project 2 that I have to do a Personal Reserch that consists in [Quest Manager](https://github.com/daskza19/QuestManager/edit/master/README.md).
+![Josep Sànchez Arbona](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Foto%20Perfil.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Introduction
 
-### Markdown
+First of all, what is Quest Managers? 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
+![TODO 1](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/TODOs/TODO%2001.png)
 
 **Bold** and _Italic_ and `Code` text
 
