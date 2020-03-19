@@ -16,6 +16,8 @@ There are different types of Quest which are:
 * Syntax Quests: They are the ones that make the player choose the correct syntax, it is used in text games.
 * Hybrids: The ones that mix the different types of Quests.
 
+![Different Quests Types](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Different%20Quests.png)
+
 The quests may have other quests within themselves and all of them are responsible for making the story progress. Side missions can be called "sidequests".
 
 So then, on this page we are going to see how to make a Quest Manager to organize all the quests we have in the game. The system must be able to organize events using an XML file that can be activated or deactivated when finished.
@@ -30,18 +32,25 @@ The clear definition of what an event is is everything that happens when an acti
 
 So then, in this quest we need an event to activate it. This could be talking to an NPC or taking the first coin. So then we would have to create the event "TALK_WITH_NPC" or "TAKE_FIRST_COIN". The following is an example of creating an event:
 
+![How Create an Event](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Touch%20Event.png)
+
 There are two types of events, the ones that start the quest and the intermediate ones to complete it. When all the events in a quest are completed, it will be ended and give the player a reward, also going through the list of "endedQuests" within the Quest Manager.
 
 So then, these would be the main structures of a quest and an event:
 
 * Quests: The quests will consist of your identifier and reward. They will also be formed by the event that activates the Quest itself and (if it has), its sidequests. Later it will be seen that these quests are put on three different lists within the Quest Manager: the “listedQuests”, “activedQuests” and the “endedQuests”.
 
+![Quests Class](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Quest%20Class.png)
 
 * Events: As previously mentioned, we will also create a new structure called “Events”, this firstly is formed by a type that distinguishes it. In my code I have implemented a "TOUCH_EVENT", which makes you have to press to pass the event. As stated, a quest (the structure shown above) has events within it. When all the events in a quest have been completed, the quests will be ended and therefore they will be placed on their respective list within the Quest Manager.
+
+![Events Class](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Event%20Class.png)
 
 ## The Quest Manager
 
 The basic structure of the Quest Manager is shown below:
+
+![Quest Manager Class](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Quest%20Manager%20Class.png)
 
 As you can see in the image, the Quest Manager is made up of the main functions: its constructor and destroyer and the Awake and Start functions. Then it also contains three lists where the prepared, active and finished quests will be saved and the xml file itself where all the data of the quests and events will be saved. The other functions are used to organize and read the xml data.
 
@@ -89,4 +98,4 @@ Moving the already completed activated quests into the list of endedQuests and r
 ![TODO 9](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/TODOs/TODO%2009.png)
 Create a new quest (the third one) from the xml. For that we will put these data:
 
-![TODO 9 DATA](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/TODOs/TODO%2010.png)
+![TODO 9 DATA](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/TODO%209.png)
