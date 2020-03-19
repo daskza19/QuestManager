@@ -1,11 +1,12 @@
 ## Welcome!
 
 Hi! I'm Josep Sànchez Arbona, student of the Bachelor's Degree in Videogames by UPC at [CITM](https://https://www.citm.upc.edu). This web is created for the second year's subject Project 2 that I have to do a Personal Reserch that consists in [Quest Manager](https://github.com/daskza19/QuestManager).
+
 ![Josep Sànchez Arbona](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Foto%20Perfil.png)
 
 ## Introduction
 
-Before talking about the Quest Manager we have to know clearly that it is a Quest. A quest (or mission), within the scope of Video Games, is a task that players can complete to earn a reward. It is normally used in role-playing games. The quests are used to give the player a certain loot, pass the level, etc.
+Before talking about the Quest Manager we have to know clearly what it is a Quest. A quest (or mission), within the scope of Video Games, is a task that players can complete to earn a reward. It is normally used in role-playing games. The quests are used to give the player a certain loot, pass the level, etc.
 
 There are different types of Quest which are:
 * Kill Quests: The ones that tell the player to defeat an enemy.
@@ -42,7 +43,7 @@ So then, these would be the main structures of a quest and an event:
 
 ![Quests Class](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Quest%20Class.png)
 
-* Events: As previously mentioned, we will also create a new structure called “Events”, this firstly is formed by a type that distinguishes it. In my code I have implemented a "TOUCH_EVENT", which makes you have to press to pass the event. As stated, a quest (the structure shown above) has events within it. When all the events in a quest have been completed, the quests will be ended and therefore they will be placed on their respective list within the Quest Manager.
+* Events: As previously mentioned, we will also create a new structure called “Events”, this firstly is formed by a type that distinguishes it. In my code I have implemented a "TOUCH_EVENT", which makes you have to touch the player with the other object. As stated, a quest (the structure shown above) has events within it. When all the events in a quest have been completed, the quests will be ended and therefore they will be placed on their respective list within the Quest Manager.
 
 ![Events Class](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/Event%20Class.png)
 
@@ -58,12 +59,15 @@ As you can see in the image, the Quest Manager is made up of the main functions:
 
 Having already explained the theory, before starting with the TODOs to apply it to practice, it was thought that it would be useful to teach how the data will be taken from the xml and its basic structure. Below is an image of it:
 
-As explained above, quests have two ints that set it apart and explain what rewards they will give the player. So then, quests have their DNI (a normal int) and their rewards. The latter, because this exercise does not seek great depth but to understand the operation of the Quest Manager,
-are the pixels that resize the character.
+![Quest in XML](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/XML.png)
+
+As explained above, quests have two ints that set it apart and explain what rewards they will give the player. So then, quests have their DNI (a normal int) and their rewards. The rewards, because this exercise does not seek great depth but to understand the operation of the Quest Manager, are the pixels that resize the character.
 
 Within each quest you can see the activation event and its sub-events. Events have a similar structure, their xml type is related to the enum of the code. In this example, type 1 is related to the “TOUCH_EVENT”
 
 ## Practical Part
+
+You can download the Handout with the TODOs [here](https://github.com/daskza19/QuestManager/releases/tag/0.5).
 
 ![TODO 0](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/TODOs/TODO%2000.png)
 Look at the structure mentioned above presented by the Quests, Events and the Quest Manager.
@@ -99,3 +103,13 @@ Moving the already completed activated quests into the list of endedQuests and r
 Create a new quest (the third one) from the xml. For that we will put these data:
 
 ![TODO 9 DATA](https://raw.githubusercontent.com/daskza19/QuestManager/master/Web%20Files/Images/Images/TODO%209.png)
+
+You can download the final Project with all the TODOs dones [here](https://github.com/daskza19/QuestManager/releases/tag/1.0).
+
+## Bibliography
+
+This Personal Research has been created thanks to the following links:
+* [Wikipedia Quests Definition](https://en.wikipedia.org/wiki/Quest_(video_games))
+* YouTube Videos ([1](https://www.youtube.com/watch?v=5mlziHwq90k) & [2](https://www.youtube.com/watch?v=xnopUoZbMEk&t=624s))
+* [Jaume Avinyo Personal Research](https://jaumeavinyo.github.io/Quest-Manager/)
+* [Carlos Cabreira Personal Research](https://github.com/carcasanchez/QuestManager)
